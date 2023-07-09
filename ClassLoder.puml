@@ -16,7 +16,6 @@ class DexClassLoader
 BaseDexClassLoader <|-- DexClassLoader
 class DexPathList {
    {field}Element[] dexElements;
-
   - {method} Element[] makeDexElements()
   + {method} Class<?> findClass()
 
