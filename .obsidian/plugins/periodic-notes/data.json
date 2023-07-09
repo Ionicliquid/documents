@@ -1,0 +1,32 @@
+{
+  "showGettingStartedBanner": false,
+  "hasMigratedDailyNoteSettings": false,
+  "hasMigratedWeeklyNoteSettings": false,
+  "daily": {
+    "format": "",
+    "template": "待办清单/模板.md",
+    "folder": "待办清单/日计划",
+    "enabled": true
+  },
+  "weekly": {
+    "format": "gggg-MM-DD-[W]WW",
+    "template": "待办清单/模板.md",
+    "folder": "待办清单/周计划",
+    "enabled": true
+  },
+  "monthly": {
+    "format": "",
+    "template": "",
+    "folder": ""
+  },
+  "quarterly": {
+    "format": "",
+    "template": "",
+    "folder": ""
+  },
+  "yearly": {
+    "format": "",
+    "template": "",
+    "folder": ""
+  }
+}
