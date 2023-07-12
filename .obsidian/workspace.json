@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "面试/面试题.md",
+                "file": "待办清单/日计划/2023-07-12.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "面试/面试题.md",
+                "file": "待办清单/日计划/2023-07-12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "面试/面试题.md",
+                "file": "待办清单/日计划/2023-07-12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "面试/面试题.md"
+                "file": "待办清单/日计划/2023-07-12.md"
               }
             }
           },
@@ -158,11 +158,22 @@
   },
   "active": "1648dd0ed8501328",
   "lastOpenFiles": [
-    "面试/PLANT.uml.md",
-    "面试/面试题.md",
-    "待办清单/周计划/2023-07-10-W28.md",
-    "面试",
+    "待办清单/日计划/2023-07-11.md",
     "待办清单/日计划/2023-07-10.md",
+    "待办清单/日计划/2023-07-12.md",
+    "Leetcode/字节跳动1~200.md",
+    "开源框架/OkHttp.md",
+    "frameworks/Binder.md",
+    "frameworks/Activity的启动流程.md",
+    "面试/面试题.md",
+    "开源框架/插件化.md",
+    "图片/OSI模型.png",
+    "待办清单/周计划/2023-07-10-W28.md",
+    "View/View.md",
+    "图片/DecorView添加到Window的流程.png",
+    "DecorView添加到Window的流程.png",
+    "面试/PLANT.uml.md",
+    "面试",
     "待办清单/2023-07-09.md",
     "待办清单/2023-07-10.md",
     "待办清单/周计划",
@@ -179,29 +190,20 @@
     "日记/模板.md",
     "日记",
     "Calendar.md",
-    "Leetcode/字节跳动1~200.md",
     "开源框架/组件化.md",
-    "frameworks/Activity的启动流程.md",
     "开源框架/Glide.md",
-    "开源框架/插件化.md",
-    "开源框架/OkHttp.md",
     "Coroutine.puml",
     "jetpack/Dagger2.md",
     "jetpack",
     "java与Kotlin/Java.md",
-    "View/View.md",
     "图片/DecorView的创建流程.png",
     "图片/View的绘制流程.png",
     "ClassLoder.puml",
     "Leetcode",
-    "java与Kotlin/Kotlin.md",
     "图片/分代收集.png",
     "图片/对象分配.png",
     "图片/标记整理.png",
     "图片/标记复制算法.png",
-    "图片/标记清除.png",
-    "java与Kotlin/设计模式.md",
-    "java与Kotlin/集合.md",
-    "图片/gc_roots.png"
+    "图片/标记清除.png"
   ]
 }

@@ -12,6 +12,13 @@
 androidx之后Activity默认继承自AppCompatActivity，hook原生的setContentView流程，添加了一些方法；
 ![[View的绘制流程.png]]
 1. createSubDecor：将原生DecorView content 的 View 复制到 R.id.action_bar_activity_content，并将content替换；
+
+#### 草稿
+1. performMeasure 最多执行三次？
+2. UI线程不是只能在主线程刷新？
+   - 哪个线程创建的ViewRootImpl
+### DecorView添加到Window
+![[DecorView添加到Window的流程.png]]
 ### LayoutInflater
 #### inflate
 ``` java
@@ -213,10 +220,6 @@ void rInflate(XmlPullParser parser, View parent, Context context,
 ```
 1. `include`标签不能作为根节点, include标签中的`layout_*`属性和`id`会替换掉`include`视图根节点的对应属性和id；
 3. `merge`必须放在布局文件的根节点上；
-## 草稿
-1. performMeasure 最多执行三次？
-2. UI线程不是只能在主线程刷新？
-   - 哪个线程创建的ViewRootImpl
 # 事件分发机制
 ## 草稿?
 1. 事件分发的Activity的流程
