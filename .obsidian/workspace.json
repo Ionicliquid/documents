@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "abecc7e04680d0e6",
+        "id": "b3c50ceba2980cf8",
         "type": "tabs",
         "children": [
           {
-            "id": "1648dd0ed8501328",
+            "id": "e698fbff7bb2873c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "待办清单/日计划/2023-07-12.md",
+                "file": "待办清单/日计划/2023-07-17.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "待办清单/日计划/2023-07-12.md",
+                "file": "待办清单/日计划/2023-07-17.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,8 +102,8 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "待办清单/日计划/2023-07-12.md",
-                "linksCollapsed": false,
+                "file": "待办清单/日计划/2023-07-17.md",
+                "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
             }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "待办清单/日计划/2023-07-12.md"
+                "file": "待办清单/日计划/2023-07-17.md"
               }
             }
           },
@@ -142,7 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 407.5
+    "width": 366.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -150,52 +150,52 @@
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "periodic-notes:Open this week": false,
+      "templates:插入模板": false,
       "periodic-notes:Open today": false
     }
   },
-  "active": "1648dd0ed8501328",
+  "active": "e698fbff7bb2873c",
   "lastOpenFiles": [
+    "待办清单/周计划/2023-07-10-W28.md",
+    "待办清单/周计划/2023-07-17-W29.md",
+    "待办清单/日计划/2023-07-17.md",
+    "开源框架/组件化.md",
+    "待办清单/待办清单.md",
+    "开源框架/Glide.md",
+    "开源框架/Okhttp.md",
+    "待办清单/模板.md",
+    "待办清单/日计划/2023-07-16.md",
+    "待办清单/日计划/2023-07-15.md",
+    "待办清单/日计划/2023-07-14.md",
+    "待办清单/日计划/2023-07-13.md",
+    "待办清单/日计划/2023-07-12.md",
     "待办清单/日计划/2023-07-11.md",
     "待办清单/日计划/2023-07-10.md",
-    "待办清单/日计划/2023-07-12.md",
+    "Leetcode/Top100.md",
     "Leetcode/字节跳动1~200.md",
-    "开源框架/OkHttp.md",
-    "frameworks/Binder.md",
+    "frameworks/Handler.md",
+    "java与Kotlin/设计模式.md",
     "frameworks/Activity的启动流程.md",
+    "frameworks/Binder.md",
+    "图片/Binder的一次拷贝.webp",
     "面试/面试题.md",
+    "View/View.md",
     "开源框架/插件化.md",
     "图片/OSI模型.png",
-    "待办清单/周计划/2023-07-10-W28.md",
-    "View/View.md",
     "图片/DecorView添加到Window的流程.png",
     "DecorView添加到Window的流程.png",
     "面试/PLANT.uml.md",
     "面试",
     "待办清单/2023-07-09.md",
-    "待办清单/2023-07-10.md",
     "待办清单/周计划",
     "待办清单/日计划",
-    "待办清单/模板.md",
-    "周计划/2023-07-03-W27.md",
-    "2023-07-09.md",
-    "周计划/2023-W27.md",
     "未命名.canvas",
-    "待办清单/待办清单.md",
     "待办清单",
-    "未命名.md",
     "周记",
-    "日记/模板.md",
     "日记",
-    "Calendar.md",
-    "开源框架/组件化.md",
-    "开源框架/Glide.md",
     "Coroutine.puml",
-    "jetpack/Dagger2.md",
     "jetpack",
-    "java与Kotlin/Java.md",
     "图片/DecorView的创建流程.png",
     "图片/View的绘制流程.png",
     "ClassLoder.puml",
@@ -203,7 +203,6 @@
     "图片/分代收集.png",
     "图片/对象分配.png",
     "图片/标记整理.png",
-    "图片/标记复制算法.png",
-    "图片/标记清除.png"
+    "图片/标记复制算法.png"
   ]
 }
