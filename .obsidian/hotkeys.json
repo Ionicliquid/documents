@@ -1,12 +1,4 @@
 {
-  "window:zoom-out": [
-    {
-      "modifiers": [
-        "Shift"
-      ],
-      "key": "-"
-    }
-  ],
   "outline:open-for-current": [
     {
       "modifiers": [
@@ -14,6 +6,14 @@
         "Shift"
       ],
       "key": "S"
+    }
+  ],
+  "window:zoom-in": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "ArrowUp"
     }
   ]
 }

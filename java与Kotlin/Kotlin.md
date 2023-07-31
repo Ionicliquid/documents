@@ -1,5 +1,5 @@
-## 泛型
-### 基本介绍
+# 泛型
+## 基本介绍
 1. Java 允许实例化没有具体类型参数的泛型类。但 Kotlin 要求在使用泛型时需要**显式声明泛型类型**或者是**编译器能够类型推导出具体类型**，任何不具备具体泛型类型的泛型类都无法被实例化。
 2.  类型通配符：`Java`中是`？`,` kotlin`是`*`；
 3. 上届约束进一步细化其支持的类型：`T extends Object `，`kotlin`使用`:`代替`extends`没有指定上界约束的类型形参会默认使用 `Any?` 作为上界;
@@ -45,9 +45,9 @@ startActivity<MainActivity>(context)
 - [kotlin修炼指南7之泛型](https://mp.weixin.qq.com/s/9KjbLAB_99jvh80JGNKgYw)
 - [换个姿势，十分钟拿下Java/Kotlin泛型](https://mp.weixin.qq.com/s/vSwx7fgROJcrQwEOW7Ws8A)
 - [Kotlin泛型的型变之路](https://mp.weixin.qq.com/s/UkgUfdcKCEP8My7jAxOknQ)
-## 协程
-### 挂起函数
-#### 普通函数
+# 协程
+## 挂起函数
+### 普通函数
 ``` java
 suspend fun suspendFun():String{  
     delay(1000)  
@@ -98,7 +98,7 @@ public static final Object suspendFun(@NotNull Continuation var0) {
 }
 ```
 一个普通的挂起函数，编译后会在原来的参数之外额外添加一个Continuation的参数，
-#### 高阶函数
+### 高阶函数
 ``` kotlin
 val suspendFunc: suspend String.() -> Float = {  
     delay(1000)  
@@ -174,7 +174,7 @@ public final override fun resumeWith(result: Result<Any?>) {
 }
 
 ```
-### CoroutineScope
+## CoroutineScope
 结构化并发
 结构化并发 来解决协程不可控的问题：
 1. 可以取消协程任务；
@@ -187,8 +187,8 @@ MainScope: 在Activity中使用，可以在onDestroy中使用
 ViewModelScope:绑定ViewModel生命周期；
 LifecycleScope: 跟随Lifecycle生命周期，绑定Activity/Fragment的生命周期
 Scope如何实现生命周期管理？
-### CoroutineContext
-#### 简介
+## CoroutineContext
+### 简介
 保存协程上下文的自定义集合，主要由以下4个`Element`组成：
 - `Job`：协程的唯一标识，用来控制协程的生命周期(`new、active、completing、completed、cancelling、cancelled`)；
 - `CoroutineDispatcher`：协程调度器，指定协程运行的线程(`IO、Default、Main、Unconfined`);
@@ -237,8 +237,9 @@ public operator fun plus(context: CoroutineContext): CoroutineContext =
 3. `plus`方法的调用方没有`Dispatcher`相关的Element：`CoroutineName("c1") + Job()`结果:`CoroutineName("c1") <- Job`。头插法被plus的(`Job`)放在链表头部
 4. `plus`方法的调用方只有`Dispatcher`相关的`Element` ：`Dispatchers.Main + Job()`结果:`Job <- Dispatchers.Main`。虽然是头插法，但是`ContinuationInterceptor`必须在链表头部。
 5. `plus`方法的调用方是包含`Dispatcher`相关Element的链表： `Dispatchers.Main + Job() + CoroutineName("c5")`结果:`Job <- CoroutineName("c5") <- Dispatchers.Main`。Dispatchers.Main在链表头部，其它的采用头插法。
-### CoroutineStart
-### launch
+## CoroutineStart
+## launch
+### 相关对象的创建的过程
 ``` kotlin
 public fun CoroutineScope.launch(  
     context: CoroutineContext = EmptyCoroutineContext,  
@@ -290,7 +291,14 @@ public fun intercepted(): Continuation<Any?> =
 //CoroutineDispatcher
 public final override fun <T> interceptContinuation(continuation: Continuation<T>): Continuation<T> =  
     DispatchedContinuation(this, continuation)		
-//DispatchedContinuation //5
+```
+1. 与`CoroutineScope`组合生成新的`CoroutineContex`默认为 `Dispatchers.Default`；
+2. 创建`StandaloneCoroutine`，其实现`Job`接口，通过它启动协程，并关联父`job`；
+3. ` block `为高阶函数，继承自`SuspendLambda`，实现`Function2`接口，`create`方法，返回自身对象；
+4. `intercepted`：`ContinuationImpl`是`SuspendLambda`  父类，持有的`CoroutineContext`为`StandaloneCoroutine+DefaultScheduler`，后者属于`ContinuationInterceptor`；
+### 工作流程
+``` kotlin
+//DispatchedContinuation //1
 inline fun resumeCancellableWith(  
     result: Result<T>,  
     noinline onCancellation: ((cause: Throwable) -> Unit)?  
@@ -308,6 +316,29 @@ inline fun resumeCancellableWith(
         }  
     }  
 }	
+// CoroutineScheduler
+fun dispatch(block: Runnable, taskContext: TaskContext = NonBlockingContext, tailDispatch: Boolean = false) {  
+    trackTask()   
+    val task = createTask(block, taskContext)  
+    val isBlockingTask = task.isBlocking  
+    val stateSnapshot = if (isBlockingTask) incrementBlockingTasks() else 0  
+    val currentWorker = currentWorker()  
+    val notAdded = currentWorker.submitToLocalQueue(task, tailDispatch)  
+    if (notAdded != null) {  
+        if (!addToGlobalQueue(notAdded)) {  
+            throw RejectedExecutionException("$schedulerName was terminated")  
+        }  
+    }  
+    val skipUnpark = tailDispatch && currentWorker != null  
+    if (isBlockingTask) {  
+        signalBlockingWork(stateSnapshot, skipUnpark = skipUnpark)  
+    } else {  
+        if (skipUnpark) return  
+        signalCpuWork()  
+    }  
+}
+
+
 //DispatchedTask
 public final override fun run() {  
     assert { resumeMode != MODE_UNINITIALIZED } // should have been set before dispatching  
@@ -320,8 +351,7 @@ public final override fun run() {
             val context = continuation.context  
             val state = takeState() // NOTE: Must take state in any case, even if cancelled  
             val exception = getExceptionalResult(state)  
-            /*  
-             * Check whether continuation was originally resumed with an exception.             * If so, it dominates cancellation, otherwise the original exception             * will be silently lost.             */            val job = if (exception == null && resumeMode.isCancellableMode) context[Job] else null  
+		      val job = if (exception == null && resumeMode.isCancellableMode) context[Job] else null  
             if (job != null && !job.isActive) {  
                 val cause = job.getCancellationException()  
                 cancelCompletedResult(state, cause)  
@@ -343,14 +373,11 @@ public final override fun run() {
     }  
 }
 ```
-1. 与`CoroutineScope`组合生成新的`CoroutineContex`默认为 `Dispatchers.Default`；
-2. 创建`StandaloneCoroutine`，其实现`Job`接口，通过它启动协程，并关联父`job`；
-3. ` block `为高阶函数，继承自`SuspendLambda`，实现`Function2`接口，`create`方法，返回自身对象；
-4. `intercepted`：`ContinuationImpl`是`SuspendLambda`  父类，持有的`CoroutineContext`为`StandaloneCoroutine+DefaultScheduler`，后者属于`ContinuationInterceptor`；
-5.  `resumeCancellableWith` : `dispatcher` 为线程池子类，此时直接创建子线程，执行`Runnable`，也就是`DispatchedContinuation`本身；
-6. `run`: `DispatchedContinuation`的continuation 对象，为`SuspendLambda` ，也就是我们`launch block`中的业务逻辑；
+1.  `resumeCancellableWith` : `dispatcher` 为线程池代理类，内部持有线程池，此时直接将任务交给线程池去分配；
+2. 
+3. `run`: `DispatchedContinuation`的continuation 对象，为`SuspendLambda` ，也就是我们`launch block`中的业务逻辑；
 
-### delay 
+## delay 
 ``` kotlin
 public suspend fun delay(timeMillis: Long) {  
     if (timeMillis <= 0) return // don't delay  
@@ -390,7 +417,10 @@ public suspend inline fun <T> suspendCancellableCoroutine(
 8. async 立即开始调度 返回值和异常 等待await
 9. 只有顶级协程才能处理异常？ExceptionHandler
 10. 全局异常处理？自定义服务
-
+11. flow与Rxjava
+12. flow 冷流？
+## flow
+1. Flow上下文保存机制？，上下文保持一致？
 
 ## 语法糖
 ### inline
