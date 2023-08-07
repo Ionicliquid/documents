@@ -2,8 +2,7 @@
 'https://plantuml.com/sequence-diagram
 
 autonumber 1
-
-MainActivity -> Activity:startActivity
+Launcher -> Activity:startActivity
 Activity -> Activity: startActivityForResult
 Activity -> Instrumentation:execStartActivity
 Instrumentation -> IActivityTaskManager :startActivity
@@ -33,6 +32,11 @@ ZygoteProcess -> ZygoteServer:runSelectLoop
 ZygoteServer -> ZygoteConnection:processCommand
 ZygoteConnection -> ZygoteConnection:handleChildProc
 ZygoteConnection -> ZygoteInit:childZygoteInit
+
+ZygoteInit -> ActivityThread:main
+ActivityThread -> ActivityThread:attach
+ActivityThread -> AMS: bindApplication
+AMS -> ActivityThread:bindApplication
 
 
 @enduml
