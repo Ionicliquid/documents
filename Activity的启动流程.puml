@@ -35,7 +35,8 @@ ZygoteConnection -> ZygoteInit:childZygoteInit
 
 ZygoteInit -> ActivityThread:main
 ActivityThread -> ActivityThread:attach
-ActivityThread -> AMS: bindApplication
+ActivityThread -> AMS: attachApplication
+AMS -> AMS:attachApplicationLocked
 AMS -> ActivityThread:bindApplication
 
 

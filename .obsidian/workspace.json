@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "待办清单/周计划/2023-08-07-W32.md",
+                "file": "面试/八股文总结.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "待办清单/周计划/2023-08-07-W32.md",
+                "file": "面试/八股文总结.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "待办清单/周计划/2023-08-07-W32.md",
+                "file": "面试/八股文总结.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "待办清单/周计划/2023-08-07-W32.md"
+                "file": "面试/八股文总结.md"
               }
             }
           },
@@ -170,12 +170,17 @@
   },
   "active": "fadfcb695782dcdf",
   "lastOpenFiles": [
+    "图片/e4038625f1f444bdbefbbe6f5214f5fa.png",
+    "图片/e4038625f1f444bdbefbbe6f5214f5fa.png.crdownload",
+    "图片/8f26a86845b646988f7ade5ebd781698.png",
+    "frameworks/Binder.md",
+    "frameworks/性能优化.md",
+    "frameworks/Handler.md",
+    "待办清单/周计划/2023-08-07-W32.md",
     "Leetcode/Top100.md",
     "面试/其他.md",
     "面试/八股文总结.md",
     "java与Kotlin/Kotlin.md",
-    "frameworks/性能优化.md",
-    "待办清单/周计划/2023-08-07-W32.md",
     "待办清单/日计划/2023-08-06.md",
     "待办清单/日计划/2023-08-05.md",
     "待办清单/日计划/2023-08-04.md",
@@ -197,9 +202,6 @@
     "待办清单/日计划/2023-07-31.md",
     "待办清单/日计划/2023-07-30.md",
     "待办清单/周计划/2023-07-24-W30.md",
-    "待办清单/日计划/2023-07-24.md",
-    "待办清单/日计划/2023-07-25.md",
-    "待办清单/日计划/2023-07-26.md",
     "launch函数相关的类图.puml~",
     "launch时序图.puml",
     "launch函数相关的类图.puml",
@@ -212,10 +214,8 @@
     "图片/OSI模型.png",
     "图片/DecorView添加到Window的流程.png",
     "DecorView添加到Window的流程.png",
-    "面试",
     "图片/DecorView的创建流程.png",
     "图片/View的绘制流程.png",
-    "图片/分代收集.png",
-    "图片/对象分配.png"
+    "图片/分代收集.png"
   ]
 }
