@@ -1,4 +1,4 @@
-## JVM的内存管理
+# JVM的内存管理
 JVM是一种规范，不同的虚拟机参考规范来实现。
 运行时数据区：Java虚拟机在执行Java程序的过程中会把它所管理的内存划分为若干个不同的数据区域。主要分为堆、程序计数器、方法区、虚拟机栈和本地方法栈。
 ![[JVM 运行时数据区.png]]
@@ -85,7 +85,7 @@ JVM是一种规范，不同的虚拟机参考规范来实现。
 特点：
 1. 没有内存碎片；
 2. 指针需要移动；
-## 线程池
+# 线程池
 ### 任务的执行流程
 #### execute
 ```java
@@ -248,3 +248,70 @@ private Runnable getTask() {
     }  
 }
 ```
+
+# AQS
+1. 通过一个int同步状态码，和一个队列来控制多个线程访问资源；
+2. 状态值为0（`state=0`）表示没有线程获得锁；
+3. 通过双向链表实现FIFO，头节点为哑节点，其他每个节点都会关联一个线程，当上一个资源释放时，按序遍历链表，唤醒线程；
+**park与unpark的实现原理**
+## ReentrantLock
+### 公平/非公平
+``` java
+//FairSync
+protected final boolean tryAcquire(int acquires) {  
+    final Thread current = Thread.currentThread();  
+    int c = getState();  
+    if (c == 0) {  
+        if (!hasQueuedPredecessors() &&  
+            compareAndSetState(0, acquires)) {  
+            setExclusiveOwnerThread(current);  
+            return true;        }  
+    }  
+    else if (current == getExclusiveOwnerThread()) {  
+        int nextc = c + acquires;  
+        if (nextc < 0)  
+            throw new Error("Maximum lock count exceeded");  
+        setState(nextc);  
+        return true;    }  
+    return false;  
+}
+//Sync
+final boolean nonfairTryAcquire(int acquires) {  
+    final Thread current = Thread.currentThread();  
+    int c = getState();  
+    if (c == 0) {  
+        if (compareAndSetState(0, acquires)) {  
+            setExclusiveOwnerThread(current);  
+            return true;        }  
+    }  
+    else if (current == getExclusiveOwnerThread()) {  
+        int nextc = c + acquires;  
+        if (nextc < 0) // overflow  
+            throw new Error("Maximum lock count exceeded");  
+        setState(nextc);  
+        return true;    }  
+    return false;  
+}
+//AbstractQueuedSynchronizer
+public final boolean hasQueuedPredecessors() {  
+    Node h, s;  
+    if ((h = head) != null) {  
+        if ((s = h.next) == null || s.waitStatus > 0) {  
+            s = null; // traverse in case of concurrent cancellation  
+            for (Node p = tail; p != h && p != null; p = p.prev) {  
+                if (p.waitStatus <= 0)  
+                    s = p;  
+            }  
+        }  
+        if (s != null && s.thread != Thread.currentThread())  
+            return true;  
+    }  
+    return false;  
+}
+```
+1. 非公平：每次都尝试获取锁，失败后直接加入到队列中；
+2. 公平：队列不存在等待的节点时才尝试获取锁；
+## 参考链接
+[Java并发学习笔记（八）：AQS（AbstractQueuedSynchronizer）、ReentrantLock 原理、读写锁使用和原理\_aqs读写锁原理\_Miracle42的博客-CSDN博客](https://blog.csdn.net/han_zhuang/article/details/106535716)
+# 集合
+## HashMap
