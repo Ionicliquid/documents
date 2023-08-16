@@ -312,6 +312,8 @@ public final boolean hasQueuedPredecessors() {
 1. 非公平：每次都尝试获取锁，失败后直接加入到队列中；
 2. 公平：队列不存在等待的节点时才尝试获取锁；
 ## 参考链接
-[Java并发学习笔记（八）：AQS（AbstractQueuedSynchronizer）、ReentrantLock 原理、读写锁使用和原理\_aqs读写锁原理\_Miracle42的博客-CSDN博客](https://blog.csdn.net/han_zhuang/article/details/106535716)
+- [Java并发学习笔记（八）：AQS（AbstractQueuedSynchronizer）、ReentrantLock 原理、读写锁使用和原理\_aqs读写锁原理\_Miracle42的博客-CSDN博客](https://blog.csdn.net/han_zhuang/article/details/106535716)
+# 线程
+
 # 集合
 ## HashMap
