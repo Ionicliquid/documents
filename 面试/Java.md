@@ -26,8 +26,14 @@
 	1.  用while不用if的原因：多个消费者可之间可以互相唤醒，导致判断一直成立
 7. 死锁
 # 网络编程
-1. tcp
-2. 
+1. tcp 
+# 集合
+空间与时间的关系
+## HashMap
+1. 2的幂 让尽可能多的位数参与index的计算
+## SparseArray
+## ConcurrentHashMap
+
 ## 参考链接
 
 - [【Android面试题】2023最新面试专题：网络编程（一） - 掘金](https://juejin.cn/post/7257386139849326653)

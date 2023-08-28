@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "待办清单/周计划/2023-08-21-W34.md",
+                "file": "面试/性能优化.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "待办清单/周计划/2023-08-21-W34.md",
+                "file": "面试/性能优化.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "待办清单/周计划/2023-08-21-W34.md",
+                "file": "面试/性能优化.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "待办清单/周计划/2023-08-21-W34.md"
+                "file": "面试/性能优化.md"
               }
             }
           },
@@ -150,11 +150,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 296.5
+    "width": 424.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,34 +169,36 @@
   },
   "active": "fadfcb695782dcdf",
   "lastOpenFiles": [
+    "java与Kotlin/JVM的内存管理与垃圾回收.md",
+    "面试/Java.md",
+    "待办清单/周计划/2023-08-28-W35.md",
+    "面试/性能优化.md",
+    "开源框架/金狮.md",
+    "开源框架/OkHttp.md",
+    "frameworks/性能优化.md",
     "Leetcode/Top100.md",
-    "Leetcode/字节跳动1~200.md",
-    "Leetcode/Tencent50.md",
-    "面试/开源框架.md",
     "待办清单/周计划/2023-08-21-W34.md",
     "开源框架/插件化.md",
     "开源框架/组件化.md",
-    "开源框架/金狮.md",
-    "面试/八股文总结.md",
-    "面试/集合.md",
-    "面试/面试题.md",
-    "面试/面试题 1.md",
-    "面试/Java.md",
-    "面试/性能优化.md",
-    "frameworks/Binder.md",
-    "frameworks/性能优化.md",
-    "java与Kotlin/线程与线程池.md",
-    "java与Kotlin/JVM的内存管理与垃圾回收.md",
-    "java与Kotlin/Kotlin.md",
     "开源框架/Glide.md",
-    "待办清单/周计划/2023-08-14-W33.md",
-    "待办清单/周计划/最后三周面试突击.md",
+    "开源框架/MMKV.md",
+    "面试/OkHttp面试题.md",
     "面试/其他.md",
+    "面试/面试题.md",
+    "面试/开源框架.md",
+    "面试/集合.md",
+    "jetpack/Jetpack.md",
+    "图片/Apk打包流程.png",
+    "图片/Apk打包流程.png.crdownload",
+    "Leetcode/字节跳动1~200.md",
+    "Leetcode/Tencent50.md",
+    "面试/八股文总结.md",
+    "frameworks/Binder.md",
+    "java与Kotlin/线程与线程池.md",
+    "java与Kotlin/Kotlin.md",
+    "待办清单/周计划/2023-08-14-W33.md",
     "Pasted image 20230820200226.png",
     "图片/应用的启动阶段.png",
-    "View/View.md",
-    "java与Kotlin/设计模式.md",
-    "frameworks/Handler.md",
     "图片/e4038625f1f444bdbefbbe6f5214f5fa.png",
     "图片/e4038625f1f444bdbefbbe6f5214f5fa.png.crdownload",
     "图片/8f26a86845b646988f7ade5ebd781698.png",
@@ -211,10 +213,8 @@
     "Lifecycle类图.puml",
     "新建文本文档.txt",
     "DecorView添加到Window的流程.puml",
-    "Activity的启动流程.puml",
     "图片/Binder的一次拷贝.webp",
     "图片/OSI模型.png",
-    "图片/DecorView添加到Window的流程.png",
-    "DecorView添加到Window的流程.png"
+    "图片/DecorView添加到Window的流程.png"
   ]
 }
