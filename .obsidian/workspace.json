@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6fe63700b929701a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "面试/开源框架.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开源框架/金狮.md",
+                "file": "面试/开源框架.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "开源框架/金狮.md",
+                "file": "面试/开源框架.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "开源框架/金狮.md"
+                "file": "面试/开源框架.md"
               }
             }
           },
@@ -167,14 +180,18 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "fadfcb695782dcdf",
+  "active": "6fe63700b929701a",
   "lastOpenFiles": [
-    "面试/性能优化.md",
+    "jetpack/Jetpack.md",
     "Leetcode/Top100.md",
     "面试/开源框架.md",
+    "面试/性能优化.md",
+    "开源框架/金狮.md",
+    "面试/面试题.md",
+    "面试/集合.md",
+    "面试/八股文总结.md",
     "Leetcode/剑指offer.md",
     "面试/Java.md",
-    "开源框架/金狮.md",
     "java与Kotlin/JVM的内存管理与垃圾回收.md",
     "面试/简历.md",
     "开源框架/插件化.md",
@@ -182,10 +199,7 @@
     "待办清单/周计划/最后三周面试突击.md",
     "java与Kotlin/设计模式.md",
     "面试/OkHttp面试题.md",
-    "面试/集合.md",
-    "面试/八股文总结.md",
     "面试/其他.md",
-    "面试/面试题.md",
     "java与Kotlin/Kotlin.md",
     "java与Kotlin/线程与线程池.md",
     "开源框架/Glide.md",
@@ -194,7 +208,6 @@
     "Leetcode/Tencent50.md",
     "开源框架/OkHttp.md",
     "frameworks/性能优化.md",
-    "待办清单/周计划/2023-08-21-W34.md",
     "图片/Apk打包流程.png",
     "图片/Apk打包流程.png.crdownload",
     "Pasted image 20230820200226.png",

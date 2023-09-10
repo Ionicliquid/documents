@@ -23,7 +23,7 @@ APT+字节码插桩，看生成的代码
 MVP：接口回调问题
 MVVM: ViewModel层 与ViewModel组件
 # Databinding
-将布局擦hi分
+将布局拆分
 # ViewModel
 1. 保存数据稳定性？
 2. vm如何保存状态
