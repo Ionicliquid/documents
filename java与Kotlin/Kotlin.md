@@ -374,8 +374,7 @@ public final override fun run() {
 }
 ```
 1.  `resumeCancellableWith` : `dispatcher` 为线程池代理类，内部持有线程池，此时直接将任务交给线程池去分配；
-2. 
-3. `run`: `DispatchedContinuation`的continuation 对象，为`SuspendLambda` ，也就是我们`launch block`中的业务逻辑；
+2. `run`: `DispatchedContinuation`的continuation 对象，为`SuspendLambda` ，也就是我们`launch block`中的业务逻辑；
 
 ## delay 
 ``` kotlin
