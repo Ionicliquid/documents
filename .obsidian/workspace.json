@@ -191,8 +191,9 @@
   },
   "active": "fadfcb695782dcdf",
   "lastOpenFiles": [
-    "面试/简历.md",
+    "frameworks/进程间通信.md",
     "Leetcode/Top100.md",
+    "面试/简历.md",
     "Leetcode/字节跳动1~200.md",
     "Leetcode/Tencent50.md",
     "Leetcode/剑指offer.md",
@@ -225,7 +226,6 @@
     "面试/OkHttp面试题.md",
     "开源框架/插件化.md",
     "开源框架/组件化.md",
-    "jetpack/Jetpack.md",
     "图片/Apk打包流程.png",
     "图片/Apk打包流程.png.crdownload",
     "图片/e4038625f1f444bdbefbbe6f5214f5fa.png.crdownload",
