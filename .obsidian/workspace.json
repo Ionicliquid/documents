@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/Top100.md",
+                "file": "生活/科目一.md",
                 "mode": "source",
                 "source": false
               }
@@ -120,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Leetcode/Top100.md",
+                "file": "生活/科目一.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Leetcode/Top100.md",
+                "file": "生活/科目一.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Leetcode/Top100.md"
+                "file": "生活/科目一.md"
               }
             }
           },
@@ -202,6 +202,9 @@
   },
   "active": "6fe63700b929701a",
   "lastOpenFiles": [
+    "Leetcode/Top100.md",
+    "生活/科目一.md",
+    "生活",
     "面试/架构设计.md",
     "面试/Java.md",
     "面试/WebView.md",
@@ -211,7 +214,6 @@
     "Leetcode/剑指offer.md",
     "Leetcode/字节跳动1~200.md",
     "Leetcode/Tencent50.md",
-    "Leetcode/Top100.md",
     "面试/面试.md",
     "Pasted image 20230805110423.png",
     "面试/其他.md",
@@ -246,7 +248,6 @@
     "launch时序图.puml",
     "launch函数相关的类图.puml",
     "Lifecycle类图.puml~",
-    "Lifecycle类图.puml",
-    "新建文本文档.txt"
+    "Lifecycle类图.puml"
   ]
 }
