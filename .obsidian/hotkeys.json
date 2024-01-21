@@ -15,5 +15,13 @@
       ],
       "key": "ArrowUp"
     }
+  ],
+  "obsidian-markmind:Create New MindMap": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "="
+    }
   ]
 }

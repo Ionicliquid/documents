@@ -4,7 +4,6 @@
   "obsidian-git",
   "discordian-plugin",
   "periodic-notes",
-  "calendar",
-  "obsidian-mind-map",
-  "obsidian-plantuml"
+  "obsidian-plantuml",
+  "obsidian-markmind"
 ]
