@@ -6,3 +6,8 @@
 ## 非递归锁
 1. 不可重入锁
 2. 设置可重入的属性
+
+# 写
+1. MMKV::doAppendDataWithKey
+	1. MMKV::loadFromFile 初始化CodedOutputData m_output 记录mmap的指针 ptr
+		1. m_output = new CodedOutputData(ptr + Fixed32Size, m_file->getFileSize() - Fixed32Size);
