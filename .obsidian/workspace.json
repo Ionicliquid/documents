@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "读书笔记/2024计划/英语学习.md",
+                "file": "其他/科目四.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "读书笔记/2024计划/英语学习.md",
+                "file": "其他/科目四.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "读书笔记/2024计划/英语学习.md",
+                "file": "其他/科目四.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "读书笔记/2024计划/英语学习.md"
+                "file": "其他/科目四.md"
               }
             }
           },
@@ -173,8 +173,10 @@
   },
   "active": "403cfc7123f66eb2",
   "lastOpenFiles": [
-    "读书笔记/2024计划/找一个工作.md",
+    "其他/科目三.md",
+    "其他/科目四.md",
     "读书笔记/2024计划/英语学习.md",
+    "读书笔记/2024计划/找一个工作.md",
     "读书笔记/2024计划/读书计划.md",
     "读书笔记/2024计划/减肥.md",
     "读书笔记/成功、动机与目标.md",
@@ -202,8 +204,6 @@
     "NDK",
     "思维导图/2024计划.xmind",
     "其他/科目二.md",
-    "读书笔记/其他.md",
-    "开源框架/金狮.md",
     "未命名.canvas",
     "图片仓/4223dfa20d1b4aa8b7f9c6f27048acfc.png",
     "图片仓/cbd1941c60ba41baa7926ade2ea79170.png",
