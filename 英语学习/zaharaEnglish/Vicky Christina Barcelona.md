@@ -1,0 +1,1 @@
+1.  It's nice be able to not have to worry about if someplace is gonna stay open.

@@ -4,28 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "a3e9f7c11e312e93",
+        "id": "a49c93ba7e639031",
         "type": "tabs",
         "children": [
           {
-            "id": "376a1d81105d6b4d",
+            "id": "6b819157e47d04d2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "英语学习/英语学习计划.md",
+                "file": "读书笔记/2024计划/8月计划.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7538286953b4be2e",
+            "id": "2afc2902f907cdd8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "读书笔记/成功、动机与目标.md",
+                "file": "面试/面试.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aa0920144dcd58be",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "java与Kotlin/JVM的内存管理与垃圾回收.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "英语学习/英语学习计划.md",
+                "file": "读书笔记/2024计划/8月计划.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "英语学习/英语学习计划.md",
+                "file": "读书笔记/2024计划/8月计划.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "英语学习/英语学习计划.md"
+                "file": "读书笔记/2024计划/8月计划.md"
               }
             }
           },
@@ -170,7 +182,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 272.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,33 +195,40 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "376a1d81105d6b4d",
+  "active": "6b819157e47d04d2",
   "lastOpenFiles": [
-    "读书笔记/2024计划/2024计划.md",
-    "英语学习/英语学习计划.md",
-    "英语学习/语法.md",
-    "读书笔记/传习录.md",
-    "读书笔记/大问题：简明哲学导论.md",
-    "面试/binder.md",
-    "读书笔记/成功、动机与目标.md",
-    "读书笔记/置身事内.md",
-    "英语学习/K式方法论.md",
-    "面试/Java.md",
-    "面试/内存优化.md",
-    "面试/其他.md",
-    "面试/性能优化.md",
-    "面试/WebView.md",
-    "开源框架/插件化.md",
-    "面试/字节性能优化.md",
-    "开源框架/金狮.md",
-    "开源框架/组件化.md",
-    "开源框架/Glide.md",
-    "开源框架/OkHttp.md",
-    "开源框架/MMKV.md",
-    "面试/八股文总结.md",
+    "java与Kotlin/JVM的内存管理与垃圾回收.md",
+    "快速复习.md",
+    "面试/面试.md",
     "面试/开源框架.md",
     "面试/架构设计.md",
-    "面试/KOOM.md",
+    "面试/八股文总结.md",
+    "面试/性能优化.md",
+    "面试/内存优化.md",
+    "读书笔记/2024计划/8月计划.md",
+    "英语学习/英语老师Lee/416.md",
+    "英语学习/zaharaEnglish/笔记.md",
+    "英语学习/英语老师Lee/422.md",
+    "英语学习/英语老师Lee/421.md",
+    "英语学习/英语老师Lee/417.md",
+    "英语学习/英语老师Lee/413.md",
+    "英语学习/zaharaEnglish/2. 在云端.md",
+    "英语学习/zaharaEnglish/1. 金装律师.md",
+    "未命名 1.md",
+    "读书笔记/2024计划/7月计划.md",
+    "英语学习/zaharaEnglish/4. The Family man.md",
+    "读书笔记/如何说话 How to Speak.md",
+    "英语学习/JY 口语.md",
+    "英语学习/生词.md",
+    "读书笔记/2024计划/2024计划.md",
+    "英语学习/观影学英语/笔记.md",
+    "英语学习/zaharaEnglish/6. 艾米莉在巴黎.md",
+    "英语学习/英语老师Lee",
+    "英语学习/观影学英语",
+    "英语学习/脑洞部长",
+    "英语学习/zaharaEnglish",
+    "Pasted image 20240622235727.png",
+    "Pasted image 20240622235615.png",
     "日记",
     "未命名 1.canvas",
     "未命名.canvas",
@@ -225,12 +244,6 @@
     "图片仓/koom_dump.png",
     "图片仓/inflater优化框架-生产者消费者同步.png",
     "图片仓/获取时间性能解决.png",
-    "图片仓/按绘制链路拆解.png",
-    "图片仓/按耗时成因拆解.png",
-    "图片仓/recycler_viewholder回收示意图.png",
-    "思维导图/Model_String.xmind",
-    "思维导图",
-    "新建文件夹",
-    "plantUML/协程的类图‘.puml"
+    "图片仓/按绘制链路拆解.png"
   ]
 }
