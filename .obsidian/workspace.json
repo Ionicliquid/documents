@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "读书笔记/2024计划/8月计划.md",
+                "file": "快速复习.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "读书笔记/2024计划/8月计划.md",
+                "file": "快速复习.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "读书笔记/2024计划/8月计划.md",
+                "file": "快速复习.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "读书笔记/2024计划/8月计划.md"
+                "file": "快速复习.md"
               }
             }
           },
@@ -197,6 +197,7 @@
   },
   "active": "6b819157e47d04d2",
   "lastOpenFiles": [
+    "读书笔记/2024计划/8月计划.md",
     "java与Kotlin/JVM的内存管理与垃圾回收.md",
     "快速复习.md",
     "面试/面试.md",
@@ -205,7 +206,6 @@
     "面试/八股文总结.md",
     "面试/性能优化.md",
     "面试/内存优化.md",
-    "读书笔记/2024计划/8月计划.md",
     "英语学习/英语老师Lee/416.md",
     "英语学习/zaharaEnglish/笔记.md",
     "英语学习/英语老师Lee/422.md",
