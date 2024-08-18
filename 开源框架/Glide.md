@@ -56,7 +56,7 @@ class ApplicationLifecycle implements Lifecycle {
 }
 ```
 与应用的生命周期一致，只需要在生命周期onStart即可，其他的生命周期管理交给应用完成；
-### androidx.fragment.app.FragmentActivity/androidx.fragment.app.Fragment
+### FragmentActivity/Fragment
 ``` java
 public RequestManager get(@NonNull FragmentActivity activity) {  
   if (Util.isOnBackgroundThread()) {  
